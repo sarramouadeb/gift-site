@@ -1,0 +1,100 @@
+@font-face {
+    font-family:monkey ;
+    src: url("HappyMonkey-Regular.ttf");
+}
+body{
+    font-family: monkey;
+    text-align: center;
+    background: linear-gradient(#a2d2ff,green);
+    color:#ffffff;
+    display:flex;
+    flex-direction: column ;
+    align-items: center;
+}
+#tom{
+    width:200px;
+    border-radius:100% ;
+    border: 5px solid green;
+}
+
+h1,h2,h4,p{
+    text-shadow:0px 0px 1px  black;
+
+}
+
+#bday-age{
+    background:green ;
+    padding:5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0; /*top right bottom left*/
+}
+
+#bday-date{
+    background:green;
+    padding:5px 10px;
+    border-radius: 5px;
+}
+
+
+#header{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.gift-img{
+    /*the default value of display is block*/
+    /*we can't use display: inline because height and width will be both ignored by css*/
+   /*we can use margin to center the gift img*/
+   margin: 0px auto; /*0: top and bottom ; auto: left and right*/
+    width:400px;
+    height:400px; /*to turn the line into a square*/
+    border: solid white;
+    border-radius: 10px;
+    /*insert an image into the white square*/
+    background-image: url("D:/coursera/html_css_JS/business gift site/gift.jpg");
+    background-size:cover; /*set the size of the img exactly as the size of the box*/
+}
+.gift-section{
+    margin-top:50px;
+}
+.gift-hint{
+    margin-top:10px;
+}
+.gift-title{
+    margin-top:0px;
+}
+/*when we put cursor on the gift it changes automatically to the gif*/
+#gift-img-happy:hover {
+    background-image: url("https://media.giphy.com/media/5tlq0pRndGu8U/giphy.gif");
+    
+}
+
+#gift-img-hot:hover {
+    background-image: url("https://media.giphy.com/media/10UUe8ZsLnaqwo/giphy.gif");
+    
+}
+
+#gift-img-genius:hover{
+    background-image: url("https://media.giphy.com/media/Llffsddd0sO40/giphy.gif");
+}
+
+#gift-img-badass:hover{
+    background-image: url("https://media.giphy.com/media/PCpiZHZgqCQ00/giphy.gif");
+}
+
+#gift-img-cheers{
+    height:200px;
+}
+
+#gift-img-cheers:hover{
+    background-image: url("https://media.giphy.com/media/8Iv5lqKwKsZ2g/giphy.gif");
+}
+#footer{
+    font-style:italic;
+    width:400px;
+    margin: 40px auto 20px; /*40px: top; auto:left/right; 20px:bottom  */
+}
+
+a{
+    color:white;
+}
